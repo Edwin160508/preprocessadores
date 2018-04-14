@@ -1,0 +1,24 @@
+{
+  "name": "projeto-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss public/css/main.css",
+    "build-html": "pug --include-path template template/template.pug public/template.html",    
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "watch-html-css": "nodemon -e template -x \"npm run build-html build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.8.3",
+    "nodemon": "^1.17.3",
+    "pug-attrs": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "dependencies": {
+    "pug": "^2.0.3"
+  }
+}
