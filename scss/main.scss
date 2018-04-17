@@ -3,9 +3,10 @@ $font-stack: Helvetica, sans-serif;
     font: 100% $font-stack;
  }
  nav{
+     margin-left: 40%;
      ul{
-         margin: 0;
-         padding: 0;
+         margin: 15px;
+         padding: 15px;
          list-style: none;
      }
 
@@ -13,6 +14,45 @@ $font-stack: Helvetica, sans-serif;
      a{
          padding: 6px 12px;
          text-decoration: none;
+         color: #fefe;
+         font-weight: 900;
+         display: block;
      }
+ }
+ .black{
+     background-color: #2f2f2f;
+ }
+ .logo{
+     background-image: url('../img/logo_bloom.png');
+     width: 118px;
+     height: 45px;
+ }
+ .flex {
+     display: flex;
+ }
+ #heading section div{
+    width: 30%;    
+    padding: 0 1em 0 1em;
+ }
+ #heading section div img{
+    width: 100%;
+ }
+ button {
+     background-color: #fa9641;
+     border-color:#eea236;
+     border: 1px solid transparent;
+     color:#f3fcff;
+     padding: 0.3em 1.3em;
+     border-radius: 4px;
+     font-weight: 900;
+ }
+ .container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+ }
+ .texto-centro{
+     text-align: center;
  }
 
