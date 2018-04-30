@@ -1,8 +1,19 @@
 var http = require('http');
 var fs = require('fs');
 var url = require('url');
+var express = require('express');
+var app = express();
+var port = 3000;
+app.use(express.static('public'));
 
-http.createServer(function(request, response){
+app.get('/', function(req, res){
+	res.render('index', { title: 'Bela Vista', message: 'Hello there!' });
+});
+
+app.listen(port, function () {
+    console.log('Servidor Ativado, escutando porta '+ port);
+});
+/*http.createServer(function(request, response){
 	var q = url.parse(request.url, true);
 	var fileName = '.'+q.pathname;
 	console.log(fileName);
@@ -24,4 +35,4 @@ http.createServer(function(request, response){
 		}
 	});
 }).listen(3000);
-console.log('Servidor Ativado!!!!');
+console.log('Servidor Ativado!!!!');*/
