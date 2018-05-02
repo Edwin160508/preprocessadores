@@ -30,12 +30,18 @@ $font-stack: Helvetica, sans-serif;
  .flex {
      display: flex;
  }
+ #cabecalho{
+     background-color: #f1f1f1;
+ }
  #heading section div{
     width: 30%;    
     padding: 0 1em 0 1em;
  }
  #heading section div img{
     width: 100%;
+ }
+ #heading{
+     padding-bottom: 1em;
  }
  button {
      background-color: #fa9641;
@@ -55,4 +61,28 @@ $font-stack: Helvetica, sans-serif;
  .texto-centro{
      text-align: center;
  }
-
+ .negrito{
+     font-weight: bold;
+ }
+ .mes-quadro{
+     background-color: #f3fcff;
+     color: #2f2f2f;
+     text-align: center;
+     width: 30%;
+     padding: 1px 1px;
+     border-radius: 6px;
+     height: 5.3em;
+     margin-right: 1em;
+ }
+#postagem{
+    width: 25%;
+}
+#redes-sociais{
+    width: 30%;
+}
+#about{
+    width: 40%;
+} 
+footer{
+    color:#f3fcff;
+}
