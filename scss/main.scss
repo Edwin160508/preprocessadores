@@ -91,12 +91,15 @@ $font-stack: Helvetica, sans-serif;
 	background: url('../img/social.png') no-repeat;
     margin-right: 0;
 }
-#social ul li a{
+#social dl dd a{
     padding: 0.2em 2em;/*analisar com calma*/
-	display: block; height: 100%; text-indent: -999999em;
+	display: block; height: 100%;
 	
 }
-#social ul li:nth-child(1) {background-position: 0 0;} 
+#social dl dd:nth-child(1) {background-position: 0 0;}
+#social dl dd:nth-child(2) {background-position: 0 -2.4em;}
+#social dl dd:nth-child(3) {background-position: 0 -4.7em;}
+#social dl dd:nth-child(4) {background-position: 0 -7.1em;}
 footer{
     color:#f3fcff;
 }
