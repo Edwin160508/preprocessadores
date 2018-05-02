@@ -82,7 +82,21 @@ $font-stack: Helvetica, sans-serif;
 }
 #about{
     width: 40%;
-} 
+}
+#social{
+    margin-left: 0;
+}
+#social dl dd{
+    width: 25px; height: 25px;
+	background: url('../img/social.png') no-repeat;
+    margin-right: 0;
+}
+#social ul li a{
+    padding: 0.2em 2em;/*analisar com calma*/
+	display: block; height: 100%; text-indent: -999999em;
+	
+}
+#social ul li:nth-child(1) {background-position: 0 0;} 
 footer{
     color:#f3fcff;
 }
